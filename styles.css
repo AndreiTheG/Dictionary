@@ -1,0 +1,21 @@
+body {
+    background-color: #9acd32;
+}
+
+div {
+    margin-left: 600px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#card {
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 30px;
+}
