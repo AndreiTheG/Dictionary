@@ -13,7 +13,7 @@ function listOfWords(word) {
     output(listWords, numWords);
 }   
 
-function findTheWord(word) {
+function findTheWord(word, exists) {
     let numWords = listWords.push();
     for (let i = 0; i < numWords; i++) {
         if (listWords[i] == word) {
