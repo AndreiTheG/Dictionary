@@ -13,19 +13,15 @@ function findTheWord(word, exists) {
     return exists;
 }
 
-function addWord(word, exists) {
+function listOfWords(word) {
+    let exists = false;
+    console.log(numWords);
+    exists = findTheWord(word, exists);
     numWords = listWords.push(); 
     if (exists == false) {
         document.getElementById('message').innerHTML = '';
         numWords = listWords.push(word);
     }
-}
-
-function listOfWords(word) {
-    let exists = false;
-    console.log(numWords);
-    exists = findTheWord(word, exists);
-    addWord(word, exists);
     output(listWords, numWords);
     console.log(numWords);
 }   
