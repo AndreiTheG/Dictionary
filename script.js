@@ -5,10 +5,7 @@ function listOfWords(word) {
     let exists = false;
     console.log(numWords);
     exists = findTheWord(word, exists);
-    if (exists == false) {
-        document.getElementById('message').innerHTML = '';
-        numWords = listWords.push(word);
-    }
+    addWord(word, listWords, exists);
     console.log(numWords);
     output(listWords, numWords);
 }   
@@ -23,6 +20,13 @@ function findTheWord(word, exists) {
         }
     }
     return exists;
+}
+
+function addWord(word, listWords, exists) {
+    if (exists == false) {
+        document.getElementById('message').innerHTML = '';
+        numWords = listWords.push(word);
+    }
 }
 
 function output(listWords, numWords) {
