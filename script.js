@@ -1,5 +1,4 @@
 const listWords = [];
-let numWords = listWords.push(); 
 
 function findTheWord(word, exists) {
     let numWords = listWords.push();
@@ -14,6 +13,7 @@ function findTheWord(word, exists) {
 }
 
 function addWord(word, listWords, exists) {
+    let numWords = listWords.push(); 
     if (exists == false) {
         document.getElementById('message').innerHTML = '';
         numWords = listWords.push(word);
@@ -21,7 +21,7 @@ function addWord(word, listWords, exists) {
 }
 
 function listOfWords(word) {
-    let exists = false;
+    let numWords = listWords.push(), exists = false;
     console.log(numWords);
     exists = findTheWord(word, exists);
     addWord(word, listWords, exists);
