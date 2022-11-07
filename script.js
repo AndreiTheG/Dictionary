@@ -12,7 +12,7 @@ function findTheWord(word, exists) {
     return exists;
 }
 
-function addWord(word, listWords, exists) {
+function addWord(word, exists) {
     let numWords = listWords.push(); 
     if (exists == false) {
         document.getElementById('message').innerHTML = '';
