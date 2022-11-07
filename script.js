@@ -1,4 +1,5 @@
 const listWords = [];
+let numWords = listWords.push(); 
 
 function listOfWords(word) {
     let exists = false;
