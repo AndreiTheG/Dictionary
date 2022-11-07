@@ -25,8 +25,8 @@ function listOfWords(word) {
     console.log(numWords);
     exists = findTheWord(word, exists);
     addWord(word, exists);
-    console.log(numWords);
     output(listWords, numWords);
+    console.log(numWords);
 }   
 
 function output(listWords, numWords) {
