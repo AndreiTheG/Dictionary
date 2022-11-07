@@ -24,7 +24,7 @@ function listOfWords(word) {
     let numWords = listWords.push(), exists = false;
     console.log(numWords);
     exists = findTheWord(word, exists);
-    addWord(word, listWords, exists);
+    addWord(word, exists);
     console.log(numWords);
     output(listWords, numWords);
 }   
