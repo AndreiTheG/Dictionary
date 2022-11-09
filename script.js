@@ -13,7 +13,7 @@ function findTheWord(word, exists) {
     return exists;
 }
 
-function listOfWords(word) {
+function addWord(word) {
     let exists = false;
     console.log(numWords);
     exists = findTheWord(word, exists);
